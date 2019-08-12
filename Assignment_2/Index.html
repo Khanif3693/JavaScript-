@@ -127,12 +127,16 @@ ASSIGNMENT-2
         dataType: 'json', // added data type
         success: function(res) {
             console.log(res);
-           var result=[];
-            for (x of res.game_indices)
-            {
-                result.push(x.version.name);
+           let result=res.game_indices.map(iter)
+           function iter(x){
+             return x.version.name
+           }
+          //   for (x of res.game_indices)
+          //   {
+          //       result.push(x.version.name);
 
-            }
+          //   }
+          //  )
             console.log(result);
             //Array(20) [ "white-2", "black-2", "white", "black", "soulsilver", "heartgold", "platinum", "pearl", "diamond", "leafgreen", … ]
                
