@@ -1,0 +1,149 @@
+ASSIGNMENT-2
+<html>
+  <title>Assignment 2</title>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <div>
+    <p name="marlabs">Paragraph - 1</p>
+    <p name="marlabs-new-jersey">Paragraph - 1</p>
+    <p name="new-jersey-marlabs">Paragraph - 1</p>
+    <p name="marlabs new jersey">Paragraph - 1</p>
+    <p name="new jersey marlabs">Paragraph - 1</p>
+    <p name="newjersey marlabs philadelphia">Paragraph - 1</p>
+    <p name="newJerseymarlabs">Paragraph - 1</p>
+    <p name="newJerseymarlabsPhiladelphia">Paragraph - 1</p>
+
+    <div id="target" style="overflow: scroll; width: 200px; height: 100px;">
+      I am in the div element, and I will be used for the Scroll function in
+      Jquery Which will help me to show this message in the scrolling manner.
+      Since this is not a big message, so I have kept little space between this.
+    </div>
+    <div id="other">
+      Trigger the handler
+    </div>
+    <div id="log">I will change during resizing of window size</div>
+
+    <button name="on">CLICK ME FOR QUESTION 2 (on)</button>
+    <button name="one">CLICK ME FOR QUESTION 2 (Onclick)</button>
+    <button name="trigger">CLICK ME FOR QUESTION 2 (trigger)</button>
+
+    <button name="hover">CLICK ME FOR QUESTION 2 (hover)</button>
+    <button id="get">CLICK ME FOR AJAX CALL</button>
+    <button name="dblclick">CLICK ME FOR QUESTION 2 (dblclick)</button>
+</br><input type="text" />
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      //script to change the css value for which value of name contains marlabs
+      $("p[name*='marlabs']").css({
+        "border-width": "1px",
+        "border-color": "green",
+        "border-style": "solid"
+      });
+      //Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.
+      $("p[name~='marlabs']").css({
+        "border-width": "1px",
+        "border-color": "green",
+        "border-style": "solid"
+      });
+      //Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).
+      $("p[name|='marlabs']").css({
+        "border-width": "1px",
+        "border-color": "green",
+        "border-style": "solid"
+      });
+      //Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.
+      $("p[name$='marlabs']").css({
+        "border-width": "1px",
+        "border-color": "green",
+        "border-style": "solid"
+      });
+      //Selects elements that have the specified attribute with a value beginning exactly with a given string.
+      $("p[name^='marlabs']").css({
+        "border-width": "1px",
+        "border-color": "green",
+        "border-style": "solid"
+      });
+      //Select elements that either don’t have the specified attribute, or do have the specified attribute but not with a certain value
+      $("p[name!='marlabs']").css({
+        "border-width": "2px",
+        "border-color": "blue",
+        "border-style": "dotted"
+      });
+
+      $("button[name='on']").on("click", function() {
+        console.log("I am created by on function button");
+      });
+
+      $("button[name='one']").one("click", function() {
+        console.log("I am created by one function button");
+      });
+      $("button[name='trigger']").trigger("click");
+      $("button[name='trigger']").on("click", function() {
+        console.log("I am the child of Trigger function");
+      });
+      $("button[name='dblclick']").dblclick("click", function() {
+        console.log("I am created by double click function button");
+      });
+
+    $("input").hover(function(){
+    $("input").css("background-color", "orange");
+    console.log("hover is called");
+    });
+
+      $("input").keydown(function() {
+        $("input").css("background-color", "yellow");
+        console.log("keydown is called");
+      });
+      $("input").keyup(function() {
+        $("input").css("background-color", "green");
+        console.log("keyup is called");
+      });
+      $("input").keypress(function() {
+        $("input").css("background-color", "blue");
+        console.log("keypress is called");
+      });
+     
+     
+
+      $(window).resize(function() {
+        $("#log").append("<div>Handler for .resize() called.</div>");
+      });
+
+      $(window).resize(function() {
+        $("body").prepend("<div>" + $(window).width() + "</div>");
+      });
+
+      $("button")
+        .last()
+        .css("color", "red");
+
+        
+        $.ajax({
+        url: "https://pokeapi.co/api/v2/pokemon/ditto/",
+        type: 'GET',
+        dataType: 'json', // added data type
+        success: function(res) {
+            console.log(res);
+           let result=res.game_indices.map(iter)
+           function iter(x){
+             return x.version.name
+           }
+          //   for (x of res.game_indices)
+          //   {
+          //       result.push(x.version.name);
+
+          //   }
+          //  )
+            console.log(result);
+            //Array(20) [ "white-2", "black-2", "white", "black", "soulsilver", "heartgold", "platinum", "pearl", "diamond", "leafgreen", … ]
+               
+        }
+    });
+    
+  });
+
+  </script>
+</html>
