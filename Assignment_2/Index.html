@@ -127,10 +127,11 @@ ASSIGNMENT-2
         dataType: 'json', // added data type
         success: function(res) {
             console.log(res);
-           let result=res.game_indices.map(iter)
-           function iter(x){
-             return x.version.name
-           }
+          let result=res.game_indices.map((game) => game.version.name)
+          // let result=res.game_indices.map(iter)
+           //function iter(x){
+            // return x.version.name
+           //}
           //   for (x of res.game_indices)
           //   {
           //       result.push(x.version.name);
