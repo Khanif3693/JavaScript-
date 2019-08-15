@@ -1,5 +1,4 @@
-###SIGNUP###
-###SIGNIN###
+SignUp and SignIN pages
 Technology used:
 -Html
 -CSS
