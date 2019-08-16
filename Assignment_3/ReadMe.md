@@ -6,5 +6,5 @@ Technology used:
 -JavaScript
 -SCSS
 
-DAY 1: Sample SignUP
-DAY 2: Modified SignUP and NavBar
+-DAY 1: Sample SignUP
+-DAY 2: Modified SignUP and NavBar
