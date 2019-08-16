@@ -1,11 +1,11 @@
 SignUp and SignIN pages
-Technology used:
 
-Markup : *Html
-         *CSS
-         *Bootstrap
-         *JavaScript
-         *SCSS
-
-Markup : *DAY 1: Sample SignUP
-         *DAY 2: Modified SignUP and NavBar
+# Technology used #
+1. Html
+2. CSS
+3. Bootstrap
+4. JavaScript
+5. SCSS
+# Plan #
+1. DAY 1: Sample SignUP
+2. DAY 2: Modified SignUP and NavBar
