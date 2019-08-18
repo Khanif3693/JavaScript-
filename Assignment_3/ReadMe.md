@@ -14,3 +14,11 @@ Completed SignUp and SignIn sample forms using Bootstrap, CSS, HTML and Jquery.
 Used NavBars to navigate through the Signup and SignIn forms.
 
 Check the following figure.
+
+![picture](Assignment_3/Home_Assignment3.PNG)
+
+![picture](Assignment_3/SignUp_Assignment3.PNG)
+
+
+![picture](Assignment_3/About_Assignment3.PNG)
+
