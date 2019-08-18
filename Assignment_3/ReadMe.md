@@ -15,10 +15,10 @@ Used NavBars to navigate through the Signup and SignIn forms.
 
 Check the following figure.
 
-![picture](Assignment_3/Home_Assignment3.PNG)
+![Home](https://github.com/Khanif3693/JavaScript-/blob/master/Assignment_3/Home_Assignment3.PNG)
 
-![picture](Assignment_3/SignUp_Assignment3.PNG)
+![Signup](https://github.com/Khanif3693/JavaScript-/blob/master/Assignment_3/SignUp_Assignment3.PNG)
 
 
-![picture](Assignment_3/About_Assignment3.PNG)
+![About](https://github.com/Khanif3693/JavaScript-/blob/master/Assignment_3/About_Assignment3.PNG)
 
