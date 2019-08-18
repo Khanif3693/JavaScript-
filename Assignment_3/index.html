@@ -1,129 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Title of the document</title>
-
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
-      href="\node_modules\bootstrap\dist\css\bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
-
   <body>
     <div class="container">
       <image
       src=https://www.marlabs.com/wp-content/uploads/2017/09/marlabs_logo.png,
-      class="rounded" alt="Image_Not_Found">
-      <form class="needs-validation" novalidate>
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validationCustom01">First name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="validationCustom01"
-              placeholder="First name"
-              required
-            />
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationCustom02">Last name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="validationCustom02"
-              placeholder="Last name"
-              required
-            />
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationCustomUsername">Username</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
+      class="rounded" alt="Image_Not_Found"/>
+
+      <h2><i>Welcome to the Marlabs</i></h2>
+      <br />
+      <!-- Nav pills -->
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#Signup">Signup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#About">About</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+
+      <div class="tab-content">
+        <div id="home" class="container tab-pane active">
+          <br />
+          <h3>SignIn</h3>
+          <form>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault01"
+                  placeholder="Username"
+                  required
+                />
               </div>
-              <input
-                type="text"
-                class="form-control"
-                id="validationCustomUsername"
-                placeholder="Username"
-                aria-describedby="inputGroupPrepend"
-                required
-              />
-              <div class="invalid-feedback">
-                Please choose a username.
+              <div class="col-md-4 mb-3">
+                <input
+                  type="Password"
+                  class="form-control"
+                  id="validationDefault02"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <button type="submit" class="btn btn-primary" name="SignIn">
+                  SignIn
+                </button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationCustom03">City</label>
-            <input
-              type="text"
-              class="form-control"
-              id="validationCustom03"
-              placeholder="City"
-              required
-            />
-            <div class="invalid-feedback">
-              Please provide a valid city.
+
+        <div id="Signup" class="container tab-pane fade">
+          <br />
+          <form>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault01">First name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault01"
+                  placeholder="First name"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Last name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault02"
+                  placeholder="Last name"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="validationDefault02"
+                  placeholder="Email"
+                  required
+                />
+              </div>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationCustom04">State</label>
-            <input
-              type="text"
-              class="form-control"
-              id="validationCustom04"
-              placeholder="State"
-              required
-            />
-            <div class="invalid-feedback">
-              Please provide a valid state.
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend"
+                      >@</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustomUsername"
+                    placeholder="Username"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="tooltip">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="validationDefault02"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Confirm Pasowrd</label>
+                <input
+                  type="Password"
+                  class="form-control"
+                  id="validationDefault02"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationCustom05">Zip</label>
-            <input
-              type="text"
-              class="form-control"
-              id="validationCustom05"
-              placeholder="Zip"
-              required
-            />
-            <div class="invalid-feedback">
-              Please provide a valid zip.
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationDefault03">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault03"
+                  placeholder="City"
+                  required
+                />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationDefault04">State</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault04"
+                  placeholder="State"
+                  required
+                />
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationDefault05">Zip</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault05"
+                  placeholder="Zip"
+                  required
+                />
+              </div>
             </div>
-          </div>
+            <div class="form-group">
+              <div class="form-check-inline">
+                <span style="color:black">Select Gender &nbsp; </span>
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="optradio"
+                    checked
+                  />Male
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="optradio"
+                  />Female
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck2"
+                />
+                <label class="form-check-label" for="invalidCheck2">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" name="SignUp">
+              Submit form
+            </button>
+          </form>
         </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="invalidCheck"
-              required
-            />
-            <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
-          </div>
+
+        <div id="About" class="container tab-pane fade">
+          <br />
+          <h3>About</h3>
+          <p>
+            This is the Assignment 3.
+          </p>
         </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </form>
+      </div>
     </div>
   </body>
-  <script src="index.js"></script>
 </html>
