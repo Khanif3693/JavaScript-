@@ -1,0 +1,15 @@
+{
+  "name": "khan_assignment3",
+  "version": "1.0.0",
+  "description": "This folder contains the collaboration for the Assignment-3.\r Assignment-3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  }
+}

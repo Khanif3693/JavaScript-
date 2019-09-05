@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" > </script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+    img {
+      max-width: 35%;
+  height: 10%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    </br>
+      
+      <h2><i>Welcome to the Bike Rental Services</i></h2>
+      <br />
+      <!-- Nav pills -->
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item" >
+          <a class="nav-link active" data-toggle="pill" href="#home" id="hide" >Sign In</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#About">About</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+
+      <div class="tab-content" >
+        <div id="home" class="container tab-pane active">
+          <div id="change">
+          <br />
+          <h3>SignIn</h3>
+          <form name="SignIn_Form">
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <input
+                name="SignIn_Username"
+                  type="text"
+                  class="form-control"
+                  id="SignIn_Username"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <input
+                name="SignIn_Password"
+                  type="Password"
+                  class="form-control"
+                  id="SignIn_Password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="col-md-4 mb-3">
+                <button type="submit" class="btn btn-primary" name="SignIn_Submit" id = "SignIn_Submit" >
+                  SignIn
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+
+        <div id="Info" class="container tab-pane fade table-responsive" >
+            <div class="table-responsive">
+            <table id="datable_1" class="table table-hover display  pb-30 " id="dtMaterialDesignExample"  cellspacing="0" width="100%" >
+                
+                <thead>
+                
+                <tr>
+                
+                <th>ID</th>
+                
+                <th>NAME</th>
+                
+                <th>PRICE</th>
+                
+                <th>IMAGE</th>
+                
+                <th>PRODUCT_TYPE</th>
+                
+                </tr>
+                
+                </thead >
+                <tbody id="data"></tbody>
+                
+               
+                </table>
+              </div>
+
+         
+        </div>
+
+
+        <div id="About" class="container tab-pane fade"  >
+          <br />
+          <h3>About</h3>
+          <p>
+            This is the Bike Rental System.
+            Please login Using the following Credentials.
+            <div>
+
+            <span>Username:</span>
+            <code>Muzz</code>
+            </div>
+            <div>
+            <span>Password:</span>
+            <code>123</code>
+            </div>
+
+            <b>Please not that the Passowrd is not hashed, and also the details 
+              stored are not secure. 
+            </b>
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  <script src="index.js"></script>
+</html>
