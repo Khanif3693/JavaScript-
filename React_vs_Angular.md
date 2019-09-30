@@ -1,3 +1,6 @@
+REFERENCE: https://programmingwithmosh.com/react/react-vs-angular/
+
+
 Do you want to learn about and discover the differences between React vs. Angular? Then keep on reading! I am going to explain to you the similarities, differences, pros, and cons of both React and Angular in this article. You don’t need to be an expert programmer to understand this post but it is encouraged that you are familiar with JavaScript.
 
 *Disclaimer: I have worked extensively with both React and Angular. I used Angular at my job at IBM and React & React Native at my current job. I personally prefer React but will do my best not to taint the article with bias.
